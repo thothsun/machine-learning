@@ -6,6 +6,9 @@
 <div style="align: center" >
 <img src="qrcode.png"   width = "300" height = "400" />
 </div>
+</div>
+
+
 
 目录：
 
