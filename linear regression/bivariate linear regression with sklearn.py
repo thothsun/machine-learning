@@ -50,5 +50,5 @@ ax.set_zlabel('price')
 # # 画训练集的散点图
 ax.scatter(np.asarray(X_train)[:, 0], np.asarray(X_train)[:, 1], np.asarray(y_train), alpha=0.8, color='black')
 # 画模型，三维空间中的一个平面
-ax.plot_surface(x0, x1, y)
+ax.plot_surface(x0, x1, y, shade=False)
 plt.show()

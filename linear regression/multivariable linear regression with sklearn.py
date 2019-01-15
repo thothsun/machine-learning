@@ -12,7 +12,6 @@ import warnings
 
 # 不想看到warning，添加以下代码忽略它们
 warnings.filterwarnings(action="ignore", module="sklearn")
-warnings.filterwarnings(action="ignore", module="matplotlib")
 
 datasets = datasets.load_boston()
 print(datasets.get('feature_names'))
