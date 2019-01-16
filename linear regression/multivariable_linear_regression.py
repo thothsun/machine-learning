@@ -3,7 +3,7 @@
 @author: suns
 @contact: sunshuai0518@gmail.com
 @time: 2019/1/15 11:54 PM
-@file: multivariable linear regression.py
+@file: multivariable_linear_regression.py
 @desc: 多变量线性回归
 """
 import numpy as np

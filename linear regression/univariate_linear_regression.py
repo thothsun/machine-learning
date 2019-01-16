@@ -3,7 +3,7 @@
 @author: suns
 @contact: sunshuai0518@gmail.com
 @time: 2019/1/15 7:45 PM
-@file: univariate linear regression.py
+@file: univariate_linear_regression.py
 @desc: 单变量线性回归
 """
 

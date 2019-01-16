@@ -3,7 +3,7 @@
 @author: suns
 @contact: sunshuai0518@gmail.com
 @time: 2019/1/14 7:11 PM
-@file: bivariate linear regression with sklearn.py
+@file: bivariate_linear_regression_with_sklearn.py
 @desc: 双变量线性回归-使用sklearn
 """
 import matplotlib.pyplot as plt

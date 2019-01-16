@@ -3,7 +3,7 @@
 @author: suns
 @contact: sunshuai0518@gmail.com
 @time: 2019/1/15 9:28 PM
-@file: bivariate linear regression.py
+@file: bivariate_linear_regression.py
 @desc: 双变量线性回归
 """
 from mpl_toolkits.mplot3d import Axes3D
