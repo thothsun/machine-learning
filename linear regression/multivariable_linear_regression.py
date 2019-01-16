@@ -8,10 +8,6 @@
 """
 import numpy as np
 from sklearn import datasets
-import warnings
-
-# 不想看到warning，添加以下代码忽略它们
-warnings.filterwarnings(action="ignore", module="sklearn")
 
 dataset = datasets.load_boston()
 print(dataset.get('feature_names'))

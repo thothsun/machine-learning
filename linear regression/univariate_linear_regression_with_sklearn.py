@@ -15,7 +15,6 @@ import warnings
 
 # 不想看到warning，添加以下代码忽略它们
 warnings.filterwarnings(action="ignore", module="sklearn")
-warnings.filterwarnings(action="ignore", module="matplotlib")
 
 dataset = pd.read_csv('dataset.csv')
 X = np.asarray(dataset.get('area')).reshape(-1, 1)
