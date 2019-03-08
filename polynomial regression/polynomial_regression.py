@@ -8,6 +8,7 @@
 """
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 dataset = pd.read_csv('dataset.csv')
 X = np.asarray(dataset.get('x')).reshape(-1, 1)
@@ -51,3 +52,13 @@ print('Intercept:', intercept_)
 print('the model is: y = ', coef_[0], '* X + ', coef_[1], '* X^2 + ', intercept_)
 # 均方误差
 print("Mean squared error: %.2f" % np.average((y_test - y_test_pred) ** 2))
+
+plt.xlabel('x')
+plt.ylabel('y')
+# 画训练集的散点图
+
+X_train = X[:-3]
+plt.scatter(X_train, y_train, alpha=0.8, color='black')
+# 画模型
+plt.plot(X_train, intercept_ + coef_[0] * X_train + coef_[1] * X_train * X_train, color='green', linewidth=1)
+plt.show()
