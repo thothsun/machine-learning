@@ -3,7 +3,7 @@
 @author: suns
 @contact: sunshuai0518@gmail.com
 @time: 2019/2/12 8:57 PM
-@file: univariate_polynomial_regression_with_sklearn.py
+@file: compare_with_linear_regression.py
 @desc: 
 """
 import matplotlib.pyplot as plt
@@ -40,20 +40,6 @@ print("Mean squared error: %.2f" % mean_squared_error(y_test, y_test_pred))
 # r2 score，0,1之间，越接近1说明模型越好，越接近0说明模型越差
 print('Variance score: %.2f' % r2_score(y_test, y_test_pred), '\n')
 
-# # fit_intercept 为 True
-# model1 = Pipeline([('poly', PolynomialFeatures(degree=1)), ('linear', LinearRegression(fit_intercept=True))])
-# model1 = model1.fit(X_train[:, np.newaxis], y_train)
-# y_test_pred1 = model1.named_steps['linear'].intercept_ + model1.named_steps['linear'].coef_[1] * X_test
-# print('Coefficients: ', model1.named_steps['linear'].coef_)
-# print('Intercept:', model1.named_steps['linear'].intercept_)
-# print('the model is: y = ', model1.named_steps['linear'].intercept_, ' + ', model1.named_steps['linear'].coef_[1],
-#       '* X')
-# # 均方误差
-# print("Mean squared error: %.2f" % mean_squared_error(y_test, y_test_pred1))
-# # r2 score，0,1之间，越接近1说明模型越好，越接近0说明模型越差
-# print('Variance score: %.2f' % r2_score(y_test, y_test_pred1), '\n')
-
-# fit_intercept 为 False
 model1 = Pipeline([('poly', PolynomialFeatures(degree=1)), ('linear', LinearRegression(fit_intercept=False))])
 model1 = model1.fit(X_train[:, np.newaxis], y_train)
 y_test_pred1 = model1.named_steps['linear'].coef_[0] + model1.named_steps['linear'].coef_[1] * X_test
