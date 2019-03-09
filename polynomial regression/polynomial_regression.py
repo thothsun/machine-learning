@@ -61,6 +61,5 @@ X_train = X[:-3]
 plt.scatter(X_train, y_train, alpha=0.8, color='black')
 # 画模型
 plt.plot(X_train, intercept_ + coef_[0] * X_train + coef_[1] * X_train * X_train, color='green', linewidth=1)
-plt.savefig('1.png')
 
 plt.show()
